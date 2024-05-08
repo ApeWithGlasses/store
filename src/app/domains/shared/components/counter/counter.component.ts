@@ -13,6 +13,19 @@ export class CounterComponent {
   counter = signal(0);
   counterRef: number | undefined;
 
+  // A good option to manage intervals
+  // interval$: Subscription | null = null;
+
+  // ngOnInit(): void { 
+  //   this.interval$ = interval(1000).subscribe(() => { 
+  //     console.log(this.counter()); this.counter.update(value => value + 1); 
+  //   }); 
+  // }
+
+  // ngOnDestroy(): void { 
+  //   this.interval$?.unsubscribe(); 
+  // }
+
   constructor() {
     // NO ASYNC
     // Before render
