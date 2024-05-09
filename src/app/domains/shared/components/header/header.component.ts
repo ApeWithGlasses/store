@@ -14,10 +14,6 @@ export class HeaderComponent {
   cart = this.cartService.cart;
   total = this.cartService.total;
 
-  constructor() {
-
-  }
-
   hideSideMenu = signal(true);
 
   toggleSideMenu() {
