@@ -10,11 +10,11 @@ export const routes: Routes = [
         children: [
             {
                 path: '',
-                loadComponent: () => import('./domains/products/pages/list/list.component')
+                loadComponent: () => import('@products/pages/list/list.component')
             },
             {
                 path: 'about',
-                loadComponent: () => import('./domains/info/pages/about/about.component')
+                loadComponent: () => import('@info/pages/about/about.component')
             },
             {
                 path: 'product/:id',
